@@ -18,11 +18,11 @@
     
             <div class="cds-container container">
                 <!-- Disco ad esempio -->
-                <div v-for="(lp,i) in music" class="cd">
-                    <img :src="lp[i].poster" alt="">
-                    <h3>{{lp[i].title}}</h3>
-                    <span class="author">{{lp[i].author}}</span>
-                    <span class="year">{{lp[i].year}}</span>
+                <div v-for="lp in music" class="cd">
+                    <img :src="lp.poster" alt="">
+                    <h3>{{lp.title}}</h3>
+                    <span class="author">{{lp.author}}</span>
+                    <span class="year">{{lp.year}}</span>
                 </div>
             </div>
 
